@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------
+Name:	  Matthew S. Hartstein (010567629)
+Class: 	  GPU Programming
+Date: 	  3/12/20
+Synopsis: Lab #5: Reduction
+--------------------------------------------------------------------------------
+
+1.) How many times does a single thread block synchronize to reduce its portion
+    of the array to a single value?
+	- A single thread block will synchronize 10 times to reduce its portion
+	  of the array to a single value.
+
+2.) What is the minimum, maximum, and avereage number of "real" operations that
+    a thread will perform? "Real" operations are those that directly contribute
+    to the final reduction value.
+	- Minimum = 2 "real thread operations".
+	- Maximum = 512 "real thread operations".
+	- Average = ~256
